@@ -1,0 +1,8 @@
+<h2>Articles!</h2>
+<hr/>
+{{#each data}}
+<h3 data-id='{{id}}'>{{title}}</h3>
+<a href="{{link}}">{{link}}</a><br/>
+<button data-id='{{_id}}' id='savearticle'>Save Article</button><br/>
+<hr/>
+{{/each}}
