@@ -29,7 +29,7 @@ app.set("view engine", "handlebars");
 
 
 // here we connect to Mongo and give it a promise
-//mongoose.Promise = Promise;
+mongoose.Promise = Promise;
 
 //Database Connection for Local and Heroku
 
@@ -120,7 +120,7 @@ app.get("/saved", function (req, res) {
         });
     });
     // send them back to the index to see the new content
-// res.redirect("/");
+res.redirect("/");
   });
 });
 
