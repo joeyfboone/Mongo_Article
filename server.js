@@ -37,7 +37,8 @@ if (process.env.MONGODB_URI){
   mongoose.connect(process.env.MONGODB_URI)
 }else{
   mongoose.connect("mongodb://localhost/Article_DB", {
-      useMongoClient: true
+// mongoose.connect("mongodb://jbuser:jbuser@ds229465.mlab.com:29465/article_db", { 
+ useMongoClient: true
   })
 }
 
